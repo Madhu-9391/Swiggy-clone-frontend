@@ -56,7 +56,7 @@ const AdminSidebar = () => {
           className="m-4 flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 rounded-lg text-white transition-colors"
         >
           <FaSignOutAlt />
-          <span className="font-medium">Logout</span>
+          <span className="font-medium color-black-900">Logout</span>
         </button>
       )}
     </aside>

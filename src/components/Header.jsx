@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useOrder } from "./OrderContext"; // Assuming this context provides cart state and actions
-
+import api from "../axiosInstance";
 // Constants that were in Cart.jsx
 const DELIVERY_FEE = 40;
 
@@ -65,13 +65,14 @@ const Header = () => {
 
     try {
       // API call to your backend to save the order
-      const res = await axios.post("/swiggy/myorders", orderData);
+      const res = await api.post("/swiggy/myorders", orderData);
       if (res.data.success) {
-        setOrderNumber(orderId); // Show order confirmation in the cart panel
-        console.log("✅ Order saved:", data);
+  setOrderNumber(orderId);
+  console.log("✅ Order saved:", res.data);
       } else {
-        console.error("❌ Failed to save order:", data.message);
+  console.error("❌ Failed to save order:", res.data.message);
       }
+
     } catch (err) {
       console.error("❌ Error placing order:", err);
     }
