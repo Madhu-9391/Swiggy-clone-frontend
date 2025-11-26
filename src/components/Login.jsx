@@ -18,8 +18,8 @@ const navigate = useNavigate();
     try {
      const res = await axios.post(
         "/swiggy/login",
-        { email, password }
-        + { withCredentials: true }
+        { email, password },
+        { withCredentials: true }
       );
 
       const data = res.data;
