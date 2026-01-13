@@ -43,15 +43,16 @@ const navigate = useNavigate();
   return (
     <div className="login0">
       <h1>Login</h1>
+       <img src="/images/Login_food.jpeg" alt="Login" />
       <div className="loginimg">
-        <p>or <a href="/swiggy/register">create an account</a></p>
-        <img src="/images/Login_food.jpeg" alt="Login" />
+        <p>No account? <a href="/swiggy/register">create new account</a></p>
+       
       </div>
       <div className="Login">
         <input
           type="email"
           placeholder="email"
-          className="mn"
+          className="pass"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         /><br />
@@ -59,7 +60,7 @@ const navigate = useNavigate();
         <input
           type="password"
           placeholder="Enter password"
-          className="mn"
+          className="pass"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         /><br />

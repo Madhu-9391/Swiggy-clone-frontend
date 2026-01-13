@@ -8,45 +8,58 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .login0{
-    width:35%;
-    height:100%;
+    width:100vw;
+    height:100vh;
     align-items: center;
     justify-content: center;
 }
 .Login{
     width: 100%;
-    height:auto;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
 }
 
 .loginimg{
     width:100%;
     height:auto;
-    display:flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 a{
     color: rgb(255, 82, 0);
     text-decoration: none;
 }
-.mn{
+a:hover{
+    color:rgba(13, 150, 192, 0.986);
+    text-decoration: underline;
+}
+.pass{
     width:300px;
     height: 40px;
     margin-bottom: 20px;
 }
 #loginbtn{
-    width:300px;
-    height: 50px;
+    width:30vw;
+    height: 3rem;
     background-color:rgb(255, 82, 0);
     color: white;
     border: none;
     margin-bottom: 10px;
 }
-.loginimg img{
-    Width:80px;
-    height:80px;
+img{
+    Width:70px;
+    justify-self: center;
+    align-self: center;
+    height:70px;
+    position: relative;
+    left: -20px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
@@ -54,6 +67,7 @@ a{
 }
 p{
     font-size: 12px;
+    margin-bottom: 20px;
 }
 #msg{
     color: red;
@@ -63,7 +77,8 @@ p{
 .password-wrapper {
   position: relative;
   display: flex;
-  align-items: center;
+  justify-self: center;
+  align-self: center;
   width:300px;
 }
 
@@ -89,4 +104,18 @@ p{
 .eye-icon.open {
   transform: rotateY(180deg);
   opacity: 1;
+}
+@media(max-width:768px){
+ body{
+    margin:2px;
+ }
+ 
+ .pass{
+    width:40vw;
+    align-items: center;
+    justify-content: center;
+ }
+ .password-wrapper{
+    width:40vw;
+ }
 }

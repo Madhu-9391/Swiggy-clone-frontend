@@ -1,4 +1,12 @@
+.root{
+  width:10vw;
+  height:auto;
+}
 .App1 {
+  width:100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  height:auto;
   text-align: center;
 }
 

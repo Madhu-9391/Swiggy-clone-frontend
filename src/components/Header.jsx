@@ -140,14 +140,15 @@ const Header = () => {
     <>
       {/* --- All component styles are now combined here --- */}
       <style>{`
-        body { margin: 0; font-family: sans-serif; background: #f2f2f2; }
+        body {max-width:100vw; overflow-x:hidden; margin: 0; font-family: sans-serif; background: #f2f2f2; }
         
         /* General Header Styles */
         .header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; max-width: 1200px; margin: 0 auto; }
+        .nav-container {height:60px; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; max-width: 90%; margin: 0 auto; }
         .nav-left { display: flex; align-items: center; gap: 24px; min-width: 0; }
         .nav-right { display: flex; align-items: center; gap: 24px; }
-        .logo { width: 90px; height: auto; flex-shrink: 0; }
+        img{margin:0;padding:0;}
+        .logo{ width: 50px; height: 50px; flex-shrink: 0; align-self:center; }
         .location-link { font-weight: bold; color: #333; text-decoration: none; display: flex; align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         
         .nav-right a, .nav-right #signin, .nav-right .cart-trigger {
@@ -189,7 +190,7 @@ const Header = () => {
         
         /* Media Queries for Responsiveness */
         @media (max-width: 992px) {
-          .nav-right { position: fixed; top: 0; right: -100%; width: 80vw; max-width: 320px; height: 100vh; background: #fff; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 70px 30px 30px; gap: 28px; box-shadow: -2px 0 5px rgba(0,0,0,0.1); transition: right 0.35s ease-in-out; z-index: 999; }
+          .nav-right { position: fixed; top: 0; right:-100%; width: 80vw; max-width: 320px; height: 100vh; background: #fff; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 70px 30px 30px; gap: 28px; box-shadow: -2px 0 5px rgba(0,0,0,0.1); transition: right 0.35s ease-in-out; z-index: 999; }
           .nav-right.nav-right--open { right: 0; }
           .nav-toggle, .nav-close-btn { display: block; }
           .nav-right a, .nav-right #signin, .nav-right .cart-trigger, .user-dropdown { width: 100%; padding: 8px 0; font-size: 1.1rem; }
@@ -229,9 +230,9 @@ const Header = () => {
             <a href="#" onClick={closeAllMenus}>
               <i className="ri-search-line"></i> Search
             </a>
-            <a href="#" onClick={closeAllMenus}>
+            <Link to="/swiggy/offers">
               <i className="ri-discount-percent-line"></i> Offers
-            </a>
+            </Link>
             <a href="#" onClick={closeAllMenus}>
               <i className="ri-question-line"></i> Help
             </a>

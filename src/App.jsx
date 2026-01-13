@@ -18,6 +18,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Cart from "./components/Cart";
 import MyOrders from "./components/MyOrders";
+import Offers from "./components/Offers"
 
 // 🔹 Admin Components
 import AdminDashBoard from "./components/AdminDashBoard";
@@ -88,7 +89,7 @@ function AppLayout() {
 
       <Routes>
         {/* 🔹 Public Routes */}
-        <Route path="/swiggy" element={<Parts />} />
+        <Route path="/" element={<Parts />} />
         <Route path="/swiggy/login" element={<Login />} />
         <Route path="/swiggy/register" element={<Register />} />
 
@@ -106,6 +107,14 @@ function AppLayout() {
           element={
             <ProtectedRoute>
               <Parts />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/swiggy/offers"
+          element={
+            <ProtectedRoute>
+              <Offers />
             </ProtectedRoute>
           }
         />

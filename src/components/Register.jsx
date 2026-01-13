@@ -61,7 +61,7 @@ const Register = () => {
         <input
           type="text"
           placeholder="Enter Full Name"
-          className="mn"
+          className="pass"
           value={name}
           onChange={(e) => setName(e.target.value)}
         /><br />
@@ -69,7 +69,7 @@ const Register = () => {
         <input
           type="text"
           placeholder="Phone Number"
-          className="mn"
+          className="pass"
           maxLength={10}
           value={number}
           onChange={(e) => {
@@ -81,7 +81,7 @@ const Register = () => {
         <input
           type="email"
           placeholder="E-mail"
-          className="mn"
+          className="pass"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         /><br />
@@ -91,7 +91,7 @@ const Register = () => {
           <input
             type={showPassword ? 'text' : 'password'}
             placeholder="Enter Password"
-            className="mn"
+            className="pass"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -109,7 +109,7 @@ const Register = () => {
           <input
             type={showConfirmPassword ? 'text' : 'password'}
             placeholder="Confirm Password"
-            className="mn"
+            className="pass"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             onBlur={() => setShowPasswordMessage(true)}

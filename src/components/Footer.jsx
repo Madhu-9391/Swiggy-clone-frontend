@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="fi">
           <div className="fi0">
             <div className="fi1">
-              <img src="/images/swiggyfooterlogo.png" alt="Swiggy logo" />
-              <h2>Swiggy</h2>
+              <img src="/images/swiggyfooterlogo.png" alt="Foodie logo" />
+              <h2>Foodie</h2>
             </div>
             <h4>© 2024 Bundl<br />Technologies Pvt. Ltd</h4>
           </div>
@@ -17,9 +17,9 @@ const Footer = () => {
             <a href="#">About</a><br />
             <a href="#">Careers</a><br />
             <a href="#">Team</a><br />
-            <a href="#">Swiggy One</a><br />
-            <a href="#">Swiggy Instamart</a><br />
-            <a href="#">Swiggy Genie</a>
+            <a href="#">Foodie One</a><br />
+            <a href="#">Foodie Instamart</a><br />
+            <a href="#">Foodie Genie</a>
           </div>
           <div className="fi3">
             <div className="Contactus">

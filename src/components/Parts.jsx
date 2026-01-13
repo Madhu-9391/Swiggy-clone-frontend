@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Parts = () => {
+  
   const navigate = useNavigate();
 
   const handleRestaurantClick = (name, image) => {
@@ -15,6 +16,7 @@ const Parts = () => {
 
   return (
     <div className="parts">
+  
       <h2>Top Restaurant Chains in Kavali</h2>
       <div className="part1">
         <div className="images">
@@ -128,11 +130,11 @@ const Parts = () => {
 
       <div className="part4">
         <div className="download">
-          <h1>For better experience, download the Swiggy app now</h1>
+          <h1>For better experience, download the Foodie app now</h1>
         </div>
         <div className="downloadon">
-          <img id="playstore" src="/images/playstore.png" height="70px" width="200px" alt="playstore" />
-          <img src="/images/appstore.png" height="70px" width="200px" alt="appstore" />
+          <img id="playstore" src="/images/playstore.png" alt="playstore" className='PlayStore' />
+          <img src="/images/appstore.png" alt="appstore" className='AppStore'/>
         </div>
       </div>
     </div>
