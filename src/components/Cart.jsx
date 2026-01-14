@@ -233,7 +233,7 @@ const Cart = () => {
           @media screen and (max-width:768px) {
           .restaurant-info img {
           width: 35vw;
-          height:20vh;
+          height:20vw;
         }
           }
 
