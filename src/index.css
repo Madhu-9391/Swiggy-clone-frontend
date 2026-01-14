@@ -442,15 +442,15 @@ h2{
     .images1{
         width:44vw;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
        cursor: pointer;
        position: relative;
     }
     .img{
-        width:40vw;
-        height:15vh;
+        width:35vw;
+        height:20vw;
         border-radius: 20px;
-        margin-left: 1.5rem;
+        margin-left: 1.7rem;
         margin-bottom: 0.8rem;
         
     }

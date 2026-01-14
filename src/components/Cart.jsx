@@ -157,6 +157,8 @@ const Cart = () => {
           border-radius: 5px;
           cursor: pointer;
         }
+          .menu-item p{
+          text-align:center;}
 
         .cart-panel {
           position: fixed;
