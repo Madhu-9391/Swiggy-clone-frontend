@@ -94,18 +94,6 @@ const Cart = () => {
           font-family: sans-serif;
           background: #f2f2f2;
         }
-
-        .header {
-          background: white;
-          padding: 1rem;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          position: sticky;
-          top: 0;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
         .cart-icon {
           background: #eee;
           padding: 0.5rem;
@@ -129,10 +117,14 @@ const Cart = () => {
           text-align: center;
           padding: 1rem;
         }
+        .restaurant-info h2{
+        font-weight:bold;
+        }
 
         .restaurant-info img {
-          width: 300px;
+          width: 23vw;
           border-radius: 10px;
+          height:30vh;
         }
 
         .menu {
@@ -145,6 +137,7 @@ const Cart = () => {
         .menu-item {
           background: white;
           margin-bottom: 1rem;
+          text-align:center;
           padding: 1rem;
           display: flex;
           justify-content: space-between;
@@ -153,7 +146,7 @@ const Cart = () => {
           box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         .menu-item h3{
-        width:300px;
+        width:30vw;
         text-align:start;
         }
         .menu-item button {
@@ -237,6 +230,13 @@ const Cart = () => {
         .order-confirmation h2 {
           color: green;
         }
+          @media screen and (max-width:768px) {
+          .restaurant-info img {
+          width: 35vw;
+          height:20vh;
+        }
+          }
+
       `}</style>
 
       {/* Restaurant info */}

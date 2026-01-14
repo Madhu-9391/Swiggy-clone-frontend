@@ -286,7 +286,7 @@ footer{
     background-color:black;
     width:100%;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     height:auto;
 }
 .fi{
@@ -428,21 +428,27 @@ h2{
         font-size: 20px;
     }
     .part1{
-        width: 98%;
+        width: 96%;
         margin-top:10px;
+        
     }
     .images{
+        display: flex;
+        flex-wrap: wrap;
         padding-bottom: 20px;
         border-bottom:1px solid black;
     }
     
     .images1{
+        width:44vw;
+        align-items: center;
+        justify-content: center;
        cursor: pointer;
        position: relative;
     }
     .img{
-        width:20vw;
-        height:8vh;
+        width:40vw;
+        height:15vh;
         border-radius: 20px;
         margin-left: 1.5rem;
         margin-bottom: 0.8rem;
@@ -450,8 +456,8 @@ h2{
     }
     
     .img:hover{
-       width: 22vw;
-       height:10vh; 
+       width: 32vw;
+       height:12vh; 
     }
     
     .images h3{
@@ -467,7 +473,7 @@ h2{
     }
     
     .part2{
-        width: 98%;
+        width: 96%;
         height:auto;
         margin-top: 10px;
      }
@@ -482,7 +488,7 @@ h2{
      }
      .images2{
          
-         width:90%;
+         width:96%;
          height:auto;
          display:flex;
          flex-wrap: wrap;
@@ -506,7 +512,7 @@ h2{
      .images21 img{
          margin-top: 10px;
          width:35vw;
-         height:20vw;
+         height:15vh;
          border-radius: 20px;
          object-fit: cover;
          margin-left:4vw;
